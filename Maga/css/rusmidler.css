@@ -1,0 +1,157 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --tekstfarv: rgb(50, 50, 50);
+  }
+
+.Rusmidler {
+    font-size: 150px; /* font størrelse */
+    font-family: "brittanic bold"; /* font */
+    color: rgb(255, 255, 255); /* farve */
+    line-height: 1.281; /* linje højde */
+    text-align: center; /* centrer teksten po siden */
+    position: absolute; /* gor so teksten kan overlappe baggrund */
+    left: 600.11px; /* rykker teksten længere til højre */
+    top: 300.603px; /* hvor langt teksten er fra toppen */
+    z-index: 4;
+  }
+  
+  body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    /* fjerner margins der var i kanten */
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  
+  header {
+    background: url('header-background.jpg') no-repeat center center; /* billede */
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; /* nav menu er i venstre side */
+    padding: 10px 20px;
+  }
+  
+  .logo img {
+    width: 230px; /* logo størrelse */
+    height: auto;
+  }
+  
+  /* nav menu star vandret */
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 50px;
+    position: relative;
+  }
+  
+  /* stilen på nav menuen */
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    transition: color 0.3s ease;
+    font-family:britannic bold ;
+  }
+
+  nav ul li:hover .submenu {
+    display: block;
+ }
+
+ .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff00;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    padding-left: 0px;
+ }
+  
+ .submenu li {
+    margin: 0;
+ }
+
+ .submenu li a {
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 30px;
+ }  
+ /*artikel design */
+  article {
+    margin-top: 600px; 
+    padding: 30px; 
+    background-color: rgb(247, 247, 247); 
+    color: black; 
+    max-width: 800px; 
+    margin-left: auto; 
+    margin-right: auto;
+  }
+  
+  article h1 {
+    font-size: 3.6rem;
+    font-family: "Rubik", sans-serif;
+    line-height: 1.15em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  article p {
+    font-size: 25px; 
+    font-family: 'Times New Roman';
+    letter-spacing: 1px;
+    line-height: 35px;
+    color: var(--tekstfarv);
+  }
+
+  /* overskift design */
+  h2{  
+    font-size: 55px;
+    text-align: center;
+    color: black;
+  }
+
+  h3{
+    font-size: 40px;
+    color: var(--tekstfarv);
+    padding-top: 35px;
+  }
+ /* knap deisng*/
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 40px; 
+    right: 300px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: rgb(54, 54, 54);
+    color: rgb(255, 255, 255); 
+    cursor: pointer; 
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 18px; 
+    word-spacing: 4px;
+    letter-spacing: 1px;
+  }
+  
+#myBtn:hover {
+    background-color: #555; 
+  }

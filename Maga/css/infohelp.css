@@ -1,0 +1,221 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --tekstfarv: rgb(50, 50, 50);
+  }
+
+.Rusmidler {
+    font-size: 140px; /* font størrelse */
+    font-family: "brittanic bold"; /* font */
+    color: rgb(255, 255, 255); /* farve */
+    line-height: 1.281; /* linje højde */
+    text-align: center; /* centrer teksten po siden */
+    position: absolute; /* gor so teksten kan overlappe baggrund */
+    left: 450.11px; /* rykker teksten længere til højre */
+    top: 280.603px; /* hvor langt teksten er fra toppen */
+    z-index: 4;
+  }
+
+
+  body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    /* fjerner margins der var i kanten */
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-image: url('images/hjoepmisbrug.png');/* baggrundsbilledet */
+    background-repeat: no-repeat; /* baggrundsbilledet ikke gentager sig */
+    background-attachment: fixed;
+    background-size: 100% 100%; /* sørger for billedet dækker helesiden */
+  }
+
+
+
+
+  header {
+    background: url('header-background.jpg') no-repeat center center; /* billede */
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; /* nav menu er i venstre side */
+    padding: 10px 20px;
+  }
+  
+  .logo img {
+    width: 230px; /* logo størrelse */
+    height: auto;
+  }
+  
+  /* nav menu star vandret */
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 50px;
+    position: relative;
+  }
+  
+  /* stilen på nav menuen */
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    transition: color 0.3s ease;
+    font-family:britannic bold ;
+  }
+
+  nav ul li:hover .submenu {
+    display: block;
+ }
+
+ .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff00;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    padding-left: 0px;
+ }
+  
+ .submenu li {
+    margin: 0;
+ }
+
+ .submenu li a {
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 30px;
+ }  
+
+  article {
+    margin-top: 600px; /* laver space */
+    padding: 30px; /* padding inde i artiklen */
+    background-color: rgb(247, 247, 247); /* baggrundsfarve */
+    color: black; /* tekst farve */
+    max-width: 800px; /* max længde på artiklen */
+    margin-left: auto; /* centrer atikel blokken */
+    margin-right: auto;
+  }
+  
+  /* h1 design */
+  article h1 {
+    font-size: 3.6rem;
+    font-family: "Rubik", sans-serif;
+    line-height: 1.15em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  /* paragraf tekst design */ 
+  article p {
+    font-size: 25px; 
+    font-family: 'Times New Roman';
+
+    word-spacing: 2px;
+    line-height: 40px;
+    color: var(--tekstfarv);
+  }
+
+  h2{  
+    font-size: 55px;
+    text-align: center;
+    color: black;
+  }
+
+  h3{
+    font-size: 40px;
+    color: var(--tekstfarv);
+    padding-top: 35px;
+  }
+
+  /* knap design */
+#myBtn {
+    display: none; /* skjult */
+    position: fixed; /* positionen er fast */
+    bottom: 40px; /* knapper er i bunden */
+    right: 350px; /* placere knappen på venstre side */
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: rgb(37, 37, 37); /* farve */
+    color: rgb(255, 255, 255); /* Tekst farve  */
+    cursor: pointer; /* visuelt klik bar med musen */
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 18px; 
+    word-spacing: 4px;
+    letter-spacing: 1px;
+  }
+  
+#myBtn:hover {
+    background-color: #555; /* skifter farve når musen er over */
+  }
+¨
+/* formular */
+.contact-form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(226, 226, 226, 0.7); 
+  border-radius: 8px;
+  color: rgb(66, 66, 66);
+}
+/* deisnget på formular */
+.contact-form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form-container .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form-container input[type="text"],
+.contact-form-container input[type="email"],
+.contact-form-container textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #b5b5b5;
+  color: rgb(68, 68, 68);
+}
+ /* send knappen ´*/
+.contact-form-container button {
+  display: block;
+  width: 99%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #858585;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form-container button:hover {
+  background-color: #555; 
+}
+

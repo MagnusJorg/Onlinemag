@@ -1,0 +1,89 @@
+
+
+.FESTER_DU_MED_OMTANKE_ {
+  font-size: 150px; /* font størrelse */
+  font-family: "brittanic bold"; /* font */
+  color: rgb(255, 255, 255); /* farve */
+  line-height: 1.281; /* linje højde */
+  text-align: center; /* centrer teksten po siden */
+  position: absolute; /* gor so teksten kan overlappe baggrund */
+  left: 80.11px;
+  top: 250.603px; /* hvor langt teksten er fra toppen */
+  z-index: 4;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  /* fjerner margins der var i kanten */
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+header {
+  background: url('header-background.jpg') no-repeat center center; /* billede */
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center; 
+  justify-content: flex-start; /* nav menu er i venstre side */
+  padding: 10px 20px;
+}
+
+.logo img {
+  width: 230px; /* logo størrelse */
+  height: auto;
+}
+
+ /* nav menu star vandret */
+ nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 50px;
+  position: relative;
+}
+
+/* stilen på nav menuen */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  transition: color 0.3s ease;
+  font-family:britannic bold ;
+}
+
+/* menuen dropdowner */
+nav ul li:hover .submenu {
+  display: block;
+}
+/* drowdown menu stil */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff00;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1000;
+  padding-left: 0px;
+}
+
+.submenu li {
+  margin: 0;
+}
+
+/* teksten */
+.submenu li a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 30px;
+}  
